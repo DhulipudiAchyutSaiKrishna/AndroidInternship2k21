@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ExampleScroll</string>
+    <string name="head">Android</string>
+    <string name="shead">Introduction to Android</string>
+    <string name="thead">History of Android</string>
+    <string name="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis rhoncus ante. Nam tincidunt, augue fermentum auctor convallis, eros ligula condimentum massa, quis tincidunt metus nisl nec mi. Ut scelerisque faucibus tempus. Proin a egestas justo. Suspendisse potenti. Aenean dictum dapibus semper. Donec semper dui ac purus commodo, ac sodales velit tincidunt. Fusce non justo ultrices, dapibus ex sed, congue augue. Aenean efficitur quam eu mauris efficitur gravida. Cras ante leo, imperdiet id purus non, egestas hendrerit mi. Aliquam erat volutpat. Praesent mattis lacus lacus, ut varius urna sodales eu. Sed a iaculis nibh.
+        <br>Vivamus porta elit sit amet venenatis rhoncus. Vivamus vehicula neque vel nunc ullamcorper, nec rutrum enim lobortis. Sed at ornare quam. Fusce dictum, tortor a cursus vulputate, mi nunc accumsan leo, et elementum augue erat id velit. Nullam tempus, lacus non posuere aliquet, libero sem rhoncus velit, a condimentum elit risus nec ante. Cras cursus neque at enim consectetur, ac mattis est auctor. Etiam egestas sem gravida risus venenatis blandit. Sed porta rhoncus diam, ut fermentum enim lacinia et. Nam diam mi, dictum quis sollicitudin sed, lobortis sit amet dolor. Ut ultricies leo ac orci consequat, nec vestibulum nulla maximus. Cras fringilla non odio ac pulvinar. Nullam et ultricies dui. Quisque pulvinar leo non interdum bibendum</br>
+  <br>This is the reference from hhtps://developer.android.com</br>
+    <br>mail id is ask@gmail.com</br>
+    <br>My number is +919876543210</br></string>
+
+</resources>
