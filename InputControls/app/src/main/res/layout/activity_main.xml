@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaperandroid">
+
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
@@ -13,48 +18,85 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Registration Form"
+        android:fontFamily="cursive"
         android:gravity="center"
-        android:textSize="45sp" />
+        android:textSize="45sp"
+        android:textColor="@color/white"/>
 
     <EditText
         android:id="@+id/name"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:hint="Enter Username" />
+        android:layout_marginTop="24dp"
+        android:hint="Enter Username"
+        android:layout_height="45dp"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_person"
+        android:background="@drawable/shape"
+        android:drawablePadding="23dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"/>
 
     <EditText
         android:id="@+id/mail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="18dp"
         android:hint="Enter Mail"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:layout_height="45dp"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_email"
+        android:background="@drawable/shape"
+        android:drawablePadding="23dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"/>
 
     <EditText
         android:id="@+id/number"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="18dp"
         android:hint="Enter Number"
-        android:inputType="number" />
-
+        android:inputType="number"
+        android:layout_height="45dp"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_phone"
+        android:background="@drawable/shape"
+        android:drawablePadding="23dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:passwordToggleEnabled="true"
+        app:boxStrokeWidth="0dp"
+        app:startIconDrawable="@drawable/ic_lock"
+        app:startIconTint="#64C778"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white">
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:hint="Enter Password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:layout_height="45dp"
+        android:padding="6dp"
+        android:drawableLeft="@drawable/ic_lock"
+        android:background="@drawable/shape"
+        android:drawablePadding="10dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Spinner
+        android:id="@+id/sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/sp"
-        android:entries="@array/branch"
-        android:textAlignment="center"
         android:layout_gravity="center"
         android:layout_marginTop="15dp"
+        android:entries="@array/branch"
+        android:textAlignment="center"
         />
 
     <RadioGroup
@@ -69,14 +111,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Male" />
+            android:text="Male"
+            android:buttonTint="@color/teal_200"
+            android:textColor="@color/white"
+            />
 
         <RadioButton
             android:id="@+id/female"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Female"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:buttonTint="@color/teal_200"
+            android:textColor="@color/white"/>
 
     </RadioGroup>
 
@@ -85,21 +132,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="Telugu" />
+        android:text="Telugu"
+        android:buttonTint="@color/teal_200"
+        android:textColor="@color/white"/>
 
     <CheckBox
         android:id="@+id/hin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="7dp"
-        android:text="Hindi" />
+        android:text="Hindi"
+        android:buttonTint="@color/teal_200"
+        android:textColor="@color/white"/>
 
     <CheckBox
         android:id="@+id/eng"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="7dp"
-        android:text="English" />
+        android:text="English"
+        android:buttonTint="@color/teal_200"
+        android:textColor="@color/white"/>
 
     <TextView
         android:id="@+id/dob"
@@ -107,7 +160,11 @@
         android:layout_height="wrap_content"
         android:hint="Add Date-Of-Birth"
         android:textSize="27sp"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:fontFamily="cursive"
+        android:textStyle="italic"
+        android:onClick="dob"
+        android:textColorHint="@color/teal_200"/>
 
     <Button
         android:id="@+id/submit"
@@ -118,3 +175,5 @@
         android:text="Submit" />
 
 </LinearLayout>
+
+</ScrollView>
