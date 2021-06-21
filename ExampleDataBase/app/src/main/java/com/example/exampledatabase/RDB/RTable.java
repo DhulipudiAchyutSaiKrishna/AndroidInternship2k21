@@ -13,11 +13,11 @@ public class RTable {
 
     String sname, snumber;
 
-    public RTable(@NonNull String sroll, String sname, String snumber) {
-        this.sroll = sroll;
-        this.sname = sname;
-        this.snumber = snumber;
-    }
+//    public RTable(@NonNull String sroll, String sname, String snumber) {
+//        this.sroll = sroll;
+//        this.sname = sname;
+//        this.snumber = snumber;
+//    }
 
     public void setSroll(@NonNull String sroll) {
         this.sroll = sroll;
